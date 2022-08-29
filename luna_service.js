@@ -35,7 +35,7 @@ function launchApp(app_id){
         id: app_id
     };
     let callback = (m) =>{
-        console.log("[Toast] called : "+ msg);
+        console.log("[Toast] called : "+ app_id);
     }
     ls2.call(launchApp_url, launchApp_params, callback);
 }
